@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with PDF</title>
+</head>
+<body>
+    <h1>Chat with Uploaded Documents</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="question" placeholder="Ask a question..." required>
+        <button type="submit">Ask</button>
+    </form>
+    <div id="response"></div>
+</body>
+</html>
+
